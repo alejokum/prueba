@@ -1,0 +1,93 @@
+
+$font-family: Lato, Helvetica Neue, Helvetica,Arial, sans-serif;
+$font-size-body: 22px;
+$font-family-h2: Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif;
+.container-fluid {
+
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar a.navbar-brand {
+   font-family: $font-family;
+   font-size: $font-size-body;
+}
+
+
+h2 {
+  font-family: $font-family-h2;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+h3{
+    font-size: 18px;
+    font-family: $font-family-h2;
+}
+
+.descripcion-notice{
+  font-family: $font-family;
+}
+
+.container-conocenos {
+  padding-top: 10px;
+  font-family: $font-family;
+  font-size: 16px;
+  text-transform: capitalize;
+  text-align: justify;
+}
+
+.footer-page{
+  background-color: #2980b9;
+  h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+
+  ul{
+    list-style-type: none;
+    padding-left: 0px;
+    font-family: $font-family;
+    li{
+      font-size: 16px
+    }
+  }
+}
+
+.footer-page {
+  a{
+    color: #fff;
+    &:hover{
+      text-decoration: none;
+      color: #2c3e50;
+    }
+  }
+  label{
+    font-size: 16px;
+    color: #fff;
+    font-weight: normal;
+  }
+}
+
+.col-sm-6 {
+  h3{
+    text-align: center;
+  }
+}
+
+.text-center {
+    padding-bottom: 20px;
+}
+
+
+.col-md-12, .slickslider {
+
+  padding-right: 0;
+  padding-left: 0;
+  width: 100%
+}
+
+.slick-slide img {
+    display: block;
+    width: 100%;
+}

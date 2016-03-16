@@ -1,0 +1,221 @@
+//- ul#ul-li
+//-   li(ng-repeat="image in angular.banner")
+//-     a(href="")
+//-       img(ng-src="{{image}}")
+
+//- navigation bar de boostrap -------------------
+
+//- ng-click="gotoElement('middle')"
+//- 
+//- nav(class="navbar navbar-default navbar-fixed-top")
+//-   .container 
+//-     .navbar-header.page-scroll 
+//-     a(class="navbar-brand" href="#page-top") Bienvenido a Start Seguros
+//-     
+//-     .collapse.navbar-collapse#bs-example-navbar-collapse-1
+//-       ul.nav.navbar-nav.navbar-right
+//-         li.hidden 
+//-           a(href="#page-top")
+//-         li.page-scroll
+//-           a(ng-click="angular.gotoElement('conocenos')") Conocenos
+//-         li.page-scroll
+//-           a(ng-click="gotoElement('marcas')") Marcas
+//-         li.page-scroll
+//-           a(ng-click="gotoElement('noticias')") Noticias
+
+//- ------------------------------------------------- -------------------
+
+header.cd-main-header
+  ul.cd-header-buttons
+    li
+      a.cd-search-trigger(href='#cd-search') Search
+       span
+    li
+      a.cd-nav-trigger(href='#cd-primary-nav') Menu
+        span
+  // cd-header-buttons
+
+main.cd-main-content
+
+nav.cd-nav
+  ul#cd-primary-nav.cd-primary-nav.is-fixed.nav-is-visible
+    li.has-children
+      a(href='#') Clothing    
+      ul.cd-secondary-nav.is-hidden
+        li.go-back
+          a(href='#0') Menu      
+        li.see-all
+          a(href='#') All Clothing       
+        li.has-children
+          a(href='#') Bottoms        
+          ul.is-hidden
+            li.go-back
+              a(href='#') Clothing           
+            li.see-all
+              a(href='#') All Bottoms         
+            li
+              a(href='#') Casual Trousers          
+            //- li.has-children
+            //-   a(href='#032') Jeans            
+            //-   ul.is-hidden
+            //-     li.go-back
+            //-       a(href='#032') Bottoms            
+            //-     li.see-all
+            //-       a(href='#') All Jeans              
+            //-     li
+            //-       a(href='#') Ripped              
+            //-     li
+            //-       a(href='#') Skinny              
+            //-     li
+            //-       a(href='#') Slim              
+            //-     li
+            //-       a(href='#') Straight         
+            li
+              a(href='#0') Leggings         
+            li
+              a(href='#0') Shorts
+    li 
+      a(href='#') Conocenos
+    li 
+      a(href='#') Noticias
+    li 
+      a(href='#') Marcas
+      
+      
+    
+
+
+#cd-search.cd-search
+  form
+    input(type='search', placeholder='Search...')
+
+
+section
+  .container-fluid 
+    .col-md-12.slickslider
+      slick(infinite="true" lazy-load="ondemand" dots="true" data="angular.banners" init-onload="true")
+        div(ng-repeat="banner in angular.banners")
+          img(ng-src="{{banner}}")
+
+//- seccion de conocenos 
+
+//- section 
+//-   .col-md-6
+//-     img.img-responsive.image-blur(src='https://cdn-images-1.medium.com/max/1800/1*sg-uLNm73whmdOgKlrQdZA.jpeg', data-large='https://cdn-images-1.medium.com/max/1800/1*sg-uLNm73whmdOgKlrQdZA.jpeg')    
+//- 
+//-   .col-md-6
+//-         img.img-responsive.image-blur(src='https://cdn-images-1.medium.com/max/1800/1*sg-uLNm73whmdOgKlrQdZA.jpeg', data-large='https://cdn-images-1.medium.com/max/1800/1*sg-uLNm73whmdOgKlrQdZA.jpeg')
+//- 
+
+
+section.conocenos 
+  .container
+    .row
+      .col-lg-12.text-center.animated.fadeInDown
+          h2 Conocenos
+      .container-conocenos
+        .col-lg-6
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquam risus eros, quis porttitor sem ultrices ut. Nulla dapibus ante vitae auctor congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque nibh orci, dignissim sit amet tempor laoreet, tempus sed mi. Pellentesque congue accumsan nibh, et facilisis nulla commodo vitae. Sed eu erat efficitur, gravida orci at, elementum mi. Donec fringilla magna at ornare ornare. Nam imperdiet imperdiet libero a ultricies. Aliquam dignissim nulla ac velit auctor blandit.
+             |vestibulum leo vel pharetra sodales. In commodo nec ligula eget malesuada. Quisque odio augue, condimentum in aliquet quis, rutrum at lectus. Vestibulum viverra libero eget dolor tristique lobortis ac nec velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin blandit tempus mauris in placerat. Donec scelerisque fermentum nibh, quis condimentum lorem dapibus ac. Donec posuere lorem ultrices, volutpat dui eget, tincidunt ligula. Vestibulum sed nulla id est rhoncus egestas. Aenean vitae gravida lectus, nec sagittis lorem. Nulla fringilla, odio vel molestie lacinia, nibh ex ultricies dui, nec iaculis urna turpis et ante. Pellentesque ultrices maximus ante, sit amet molestie ante sollicitudin et. Etiam nec velit tincidunt, mattis turpis at, placerat magna. Nulla malesuada lorem est, et tristique urna lobortis sit amet. Donec non tellus a nisl auctor placerat.
+        .col-lg-6   
+            p Etiam eleifend dolor a bibendum accumsan. Fusce condimentum lacus feugiat, malesuada felis nec, finibus tortor. Nunc et interdum dolor. Ut imperdiet leo lorem, nec condimentum ex elementum ut. Sed tincidunt nibh in tortor faucibus, sit amet commodo velit dapibus. Quisque ac aliquam elit. Integer molestie imperdiet faucibus. Etiam porttitor facilisis nibh id blandit. Nulla elit massa, porta et risus hendrerit, commodo consequat metus. Aliquam non consequat massa. Donec aliquam libero eget gravida facilisis. Integer accumsan est sit amet orci aliquet, sed vestibulum ante vestibulum. Vestibulum euismod felis nec tortor dictum, at malesuada urna aliquam. Proin vitae metus ac purus fermentum euismod eget maximus libero. Sed nec condimentum ex. Suspendisse aliquam scelerisque quam quis accumsan.      
+            
+
+//- seccion de noticias   
+section.noticias 
+  .container
+    .row
+      .col-lg-12.text-center
+          h2 Noticias 
+      .col-lg-4(ng-repeat="noticia in angular.noticias")
+          img(class="img-responsive animated pulse infinite bounce" ng-src="{{noticia.Blog.miniatura}}")
+          h3(ng-bind-html="noticia.Blog.titulo")
+          p(ng-bind-html="noticia.Blog.contenido | htmlToPlaintext | strLimit:true:200:' ...'").descripcion-notice
+          a.button.button--isi.button--border-thick.button--round-l.button--size-s
+            i.button__icon.icon.icon-forward 
+            span Ver Mas
+  
+//- section.prueba 
+//-   .container 
+//-     button(ng-morph-overlay overlay-example='example2')  Overlay 
+
+a(href='https://github.com/popdevelop/angular-splash-demo')
+  img(style='position: absolute; top: 0; right: 0; border: 0;', src='https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67', alt='Fork me on GitHub', data-canonical-src='https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png')
+.row
+  .col-md-12.text-center
+    button.btn.btn-lg.btn-success(ng-click='angular.openSplash()') Open splash
+
+section.blurry 
+  .container
+    // Row
+    .row
+      // Cols
+      .col-md-6
+        .placeholder(data-large='http://cdn2.uvnimg.com/3c/a6/921400d0499cb2980b77c519307e/futbol-generic-entry-point.jpg').img-responsive
+          img.img-small.loaded(src='assets/images/futbol-generic-entry-point.jpg' class="img-responsive")
+          |       
+          .padding
+      |   
+      .col-md-6
+        .placeholder(data-large='http://st-listas.20minutos.es/images/2012-01/316402/list_640px.jpg?1365139142').img-responsive
+          img.img-small.loaded(src='assets/images/list_640px.jpg' class="img-responsive")
+          |       
+          .padding
+
+
+
+
+section.marca 
+  .container
+    .row
+      .col-lg-12
+        h2.text-center.animated.fadeInRight Marcas
+        data-owl-carousel.owl-carousel(data-options='{navigation: false, autoPlay: 3000,lazyLoad : true,pagination: true, rewindNav : false}')
+          .item(owl-carousel-item='', ng-repeat="marca in angular.marcas") 
+            img(ng-src="{{marca.Brand.miniatura}}")
+
+footer.footer-page
+  .container
+    .row
+      .col-sm-3.center
+        h3.text-justify Productos 
+        ul   
+          li 
+            a Recubrimiento de vidrio
+          li 
+            a Persianas y cortinas
+          li 
+            a Follaje Artificial
+          li 
+            a Toldos
+          li 
+            a Pisos laminados
+      .col-sm-6.center
+        h3.text-justify Subscribete a nuestro boletin
+        .col-sm-8.col-sm-offset-2.col-xs-12
+          form(action="#")
+            .form-group 
+              label Nombre y Apellido
+              input(type='text' class="form-control")
+            .form-group 
+              label Email
+              input(type='email' class="form-control")
+            .text-center.padding-top20
+              button(class="btn btn-primary", type="submit")|Enviar
+              button(class="btn btn-danger", type="submit")| Limpiar
+
+        
+  
+            
+        
+
+             
+          
+          
+              
+
+            
+            
+          
+          
+      

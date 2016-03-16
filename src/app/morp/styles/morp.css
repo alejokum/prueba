@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('fonts/glyphicons-halflings-regular.eot');
+  src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+* {
+  box-sizing: border-box;
+}
+
+/* close icon */
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-remove:before {
+  content: "\e014";
+}
+
+
+/* demo info page */
+.info-overlay {
+  color: #F0F1F0;
+  font-size: 20px;
+  text-align: left;
+  background: #1BBA9A;
+}
+.content {
+  padding: 20px;
+}
+.content h2 {
+  text-align: center;
+}
+.info-overlay > button {
+  color: #1BBA9A;
+  display: block;
+  background: #fcfcfc;
+  /* center the button: */
+  left: -125px;
+  margin: 20px 50%;
+  position: relative;
+}
+
+/* demo login form */
+
+.close {
+  margin: 10px;
+  z-index: 2000;
+  font-size: 25px;
+  float: right;
+  cursor: pointer;
+  color: rgb(19, 146, 121);
+}
+.close:hover {
+  color: #F0F1F0;
+}
+
+/*
+/* footer */
+.info {
+  margin-top: 10em;
+  color: #AFAFAF;
+  line-height: 1.8em;
+  font-size: 0.8em;
+  letter-spacing: -.02em;
+}
+.info a {
+  color: #1BBA9A;
+  text-decoration: none;
+}*/

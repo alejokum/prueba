@@ -1,0 +1,32 @@
+.placeholder {
+  background-color: #f6f6f6;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+.placeholder img {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: opacity 1s linear;
+}
+.placeholder img.loaded {
+  /*This is a overqualified selector. For the html as is now .loaded is enough*/
+  opacity: 1;
+}
+.img-small {
+  filter: blur(50px);
+}
+.padding {
+  padding-bottom: 75%
+}
+
+
+/*el tamaño9 del contenedor viene determinado por el aspect ratio de la imagen, el cual se calcula dividiendo
+el alto de la imagen entre el ancho*/
+
+/*al momento de recibir el ratio de la imagen, debe programarse una directiva que le coloque el padding-bottom con el valor del ratio
+al contenedor*/
